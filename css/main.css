@@ -2991,3 +2991,13 @@ pre .javascript .function {
     text-align: justify;
   }
 }
+
+#group_Aarticle div.bibbase_group i+span { display: none; }
+#group_Cinproceedings div.bibbase_group i+span { display: none; }
+#group_Binvitedjournal div.bibbase_group i+span { display: none; }
+#group_Dconference div.bibbase_group i+span { display: none; }
+
+#group_Aarticle div.bibbase_group i:after { content: "Journal and Transactions" }
+#group_Binproceedings div.bibbase_group i:after { content: "International Conference" }
+#group_Cinvitedjournal div.bibbase_group i:after { content: "Invited Journal" }
+#group_Dconference div.bibbase_group i:after { content: "Domestic Conference" }

@@ -2992,6 +2992,20 @@ pre .javascript .function {
   }
 }
 
+.logo-container {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly around items */
+  align-items: center;
+  gap: 20px; /* Adds space between logos */
+  padding: 20px;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+}
+.logo-container img {
+  max-height: 100px; #Adjust the size as needed
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 #group_Aarticle div.bibbase_group i+span { display: none; }
 #group_Cinproceedings div.bibbase_group i+span { display: none; }
 #group_Binvitedjournal div.bibbase_group i+span { display: none; }

@@ -231,8 +231,38 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WKv0s2mMkHQ?si=v8e1PgHyxFrKTF69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2F5EpjPs5YRK4uThzhp&noBootstrap=1&jsonp=1&group0=custom_type&sort=-year&fullnames=1"></script>
+<style type="text/css">
+  .bibbase_note {
+      /* color: rgb(255, 149, 0); */
+      color: #FFD700; /* Gold color for prestige */
+      font-style: italic;
+      font-weight: bold;
+      text-shadow:
+        -1px 0 0 #000, 
+         1px 0 0 #000, 
+         0 -1px 0 #000, 
+         0 1px 0 #000; /* Sharper and thinner outline */
+}
+  .note {
+      color: rgb(65, 130, 219);
+      font-style: italic;
+  }
 
+  .name {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0); /* Choose any color */
+    text-decoration-style: single; /* Style of underline: single, double, dotted, dashed, etc. */
+    text-decoration-thickness: 0.8px; /* Thickness of the underline */
+}
+</style>
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FcwXij7SZv4rN4ZLfg&noBootstrap=1&jsonp=1&group0=custom_type&sort=-year&fullnames=1"></script>
+<script>
+  window.onload = function() {
+    // Ensure 'David Zhu' appears bold everywhere on the page
+    document.body.innerHTML = document.body.innerHTML.replace(/\bYaonan Zhu\b/g, '<span class="name">Yaonan Zhu</span>');
+  };
+</script>
       
       
       

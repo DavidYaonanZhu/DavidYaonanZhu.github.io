@@ -231,6 +231,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WKv0s2mMkHQ?si=v8e1PgHyxFrKTF69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<div class="publications">
 <style type="text/css">
   .bibbase_note {
       /* color: rgb(255, 149, 0); */
@@ -257,38 +258,28 @@
 }
 </style>
 <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2F2LyA7aRcJYXauyB9H&noBootstrap=1&jsonp=1&group0=custom_type&sort=-year&fullnames=1"></script>
+</div>
 <script>
+  window.onload = function() {
+      var elements = document.querySelectorAll('div.publications');
+      elements.forEach(function(element) {
+          element.innerHTML = element.innerHTML.replace(/\bYaonan Zhu\b/g, '<span class="name">Yaonan Zhu</span>');
+      });
+  };
+</script>
+<!-- <script>
   window.onload = function() {
     // Ensure 'David Zhu' appears bold everywhere on the page
     document.body.innerHTML = document.body.innerHTML.replace(/\bYaonan Zhu\b/g, '<span class="name">Yaonan Zhu</span>');
   };
-</script>
-      
+</script> -->
+
       
       
       <div class="post-body">
         
         
-          <!-- <h2 id="Journal"><a href="#Journal" class="headerlink" title="Journal"></a>Journal</h2><ul>
-<li><strong>Yaonan Zhu</strong>, Tadayoshi Aoyama and Yasuhisa Hasegawa, “Enhancing the Transparency by Onomatopoeia for Passivity-Based Time-Delayed Teleoperation,” in IEEE Robotics and Automation Letters, vol.5, no.2, pp.2981-2986, April 2020.<br>(The contents of this paper is also selected by the editorial board of <strong>ICRA 2020</strong> for presentation at the conference.)<br><a href="EnhancingTransparencybyOnomatopoeiaforTeleoperation.pdf">[Paper]</a>,<br><a href="https://doi.org/10.1109/LRA.2020.2972896" target="_blank" rel="noopener">DOI: 10.1109/LRA.2020.2972896</a>. </li>
-</ul>
-<p><img src="enOTPsystem.png" alt="system overview"></p>
-<hr>
-<ul>
-<li><strong>Yaonan Zhu</strong>, Takayuki Ito, Tadayoshi Aoyama, and Yasuhisa Hasegawa. “Development of sense of self-location based on somatosensory feedback from finger tips for extra robotic thumb control”. Robomech J 6, 7 (2019).<br><a href="https://doi.org/10.1186/s40648-019-0135-0" target="_blank" rel="noopener">[Paper]</a></li>
-</ul>
-<p><img src="ert_all_rev.png" alt="ert overview"></p>
-<hr>
-<h2 id="Conference"><a href="#Conference" class="headerlink" title="Conference"></a>Conference</h2><ul>
-<li><p><strong>Yaonan Zhu</strong>, Tadayoshi Aoyama and Yasuhisa Hasegawa, “Enhancing the Transparency by Onomatopoeia for Passivity-Based Time-Delayed Teleoperation,” in 2020 IEEE International Conference on Robotics and Automation (<strong>ICRA 2020</strong>).</p>
-</li>
-<li><p><strong>Yaonan Zhu</strong>, Tadayoshi Aoyama, Yasuhisa Hasegawa, “Haptic Display by Onomatopoeia in Time-Delayed Teleoperation System,” in the 1st IFAC Workshop on Robot Control (WROCO 2019), ThPM10.7, September 18-20, 2019, KAIST, Daejeon, Republic of Korea.</p>
-</li>
-<li><p><strong>Yaonan Zhu</strong>, Hiroshi Shikida, Tadayoshi Aoyama and Yasuhisa Hasegawa. “Evaluating Shifted Body Representation and Modified Body Schema Using Extra Robotic Thumb”, IEEE International Conference on Cyborg and Bionic Systems (CBS2018), pp. 282-285, 2018.</p>
-</li>
-<li><p><strong>Yaonan Zhu</strong>, Felix Jimenez, Tomohiro Yoshikawa, Takeshi Furuhashi, Tong Zhu. “Development of an Emotion Estimation System for Educational-Support Robot”, The 18th International Symposium on Advanced Intelligent Systems, EXCO in Daegu, Republic of Korea, 2017.</p>
-</li>
-</ul> -->
+
 
         
       </div>
@@ -341,7 +332,7 @@
                 alt="Yaonan Zhu" />
             
               <p class="site-author-name" itemprop="name">Yaonan Zhu</p>
-              <p class="site-description motion-element" itemprop="description">Ph.D candidate in Nagoya University</p>
+              <p class="site-description motion-element" itemprop="description">Project Assistant Professor in University of Tokyo</p>
           </div>
 
           <nav class="site-state motion-element">

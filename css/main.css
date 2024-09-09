@@ -3006,6 +3006,11 @@ pre .javascript .function {
   height: auto; /*Maintain aspect ratio */
 }
 
+.centered-video {
+  display: block;
+  margin: 0 auto;
+}
+
 
 #group_Aarticle div.bibbase_group i+span { display: none; }
 #group_Cinproceedings div.bibbase_group i+span { display: none; }

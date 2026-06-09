@@ -3152,6 +3152,11 @@ pre .javascript .function {
   padding: 0;
   border: 0;
 }
+.posts-expand .post-body .news-item img.news-item-image-portrait {
+  width: auto;
+  max-width: 100%;
+  max-height: 640px;
+}
 .news-logo-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 190px));

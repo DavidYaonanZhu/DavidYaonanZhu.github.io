@@ -3287,6 +3287,7 @@ pre .javascript .function {
 #group_Cinproceedings div.bibbase_group i+span { display: none; }
 #group_Binvitedjournal div.bibbase_group i+span { display: none; }
 #group_Dconference div.bibbase_group i+span { display: none; }
+.bibbase_group_count { display: none; }
 
 #group_Aarticle div.bibbase_group i:after { content: "Journal and Transactions" }
 #group_Binproceedings div.bibbase_group i:after { content: "International Conference" }

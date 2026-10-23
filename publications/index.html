@@ -285,12 +285,30 @@
     text-decoration-thickness: 0.8px; /* Thickness of the underline */
 }
 </style>
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2FDavidYaonanZhu%2FDavidYaonanZhu.github.io%2Fc99f3d0985864afe111863dd3eb54eee9b5bb1d6%2Fbib.bib&noBootstrap=1&jsonp=1&group0=custom_type&sort=-year&fullnames=1"></script>
+<style>
+  .local-publications h2 { margin: 28px 0 16px; font-size: 22px; }
+  .local-publications article { margin-bottom: 22px; line-height: 1.8; }
+  .local-publications p { margin: 0; }
+  .local-publications .publication-links { display: flex; gap: 12px; align-items: baseline; }
+  .local-publications details { min-width: 0; }
+  .local-publications summary { cursor: pointer; text-decoration: underline; }
+  .local-publications pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; }
+</style>
+<script>
+  if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+    document.currentScript.parentElement.dataset.localPreview = 'true';
+    document.write('<script src="/lib/bibtex-parse-js/bibtexParse.js"><\/script>');
+    document.write('<script src="/js/src/publications-preview.js"><\/script>');
+  } else {
+    document.write('<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2FDavidYaonanZhu%2FDavidYaonanZhu.github.io%2F032681e46da348e2ecd2ecd6c953fcbbc76ee1d8%2Fbib.bib&noBootstrap=1&jsonp=1&group0=custom_type&sort=-year&fullnames=1"><\/script>');
+  }
+</script>
 </div>
 <script>
   window.onload = function() {
       var elements = document.querySelectorAll('div.publications');
       elements.forEach(function(element) {
+          if (element.dataset.localPreview === 'true') return;
           element.innerHTML = element.innerHTML.replace(/\bYaonan Zhu\b/g, '<span class="name">Yaonan Zhu</span>');
       });
   };

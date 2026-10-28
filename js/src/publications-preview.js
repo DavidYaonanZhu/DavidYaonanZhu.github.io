@@ -68,7 +68,7 @@
             /Yaonan Zhu|朱曜南/.test(name) ? 'name' : ''));
         });
         citation.append('. ');
-        const venue = fields.journal || fields.booktitle;
+        const venue = fields.journal || fields.booktitle || fields.howpublished;
         if (venue) {
           if (fields.booktitle) citation.append('In ');
           citation.appendChild(element('em', text(venue)));
